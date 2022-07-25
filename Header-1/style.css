@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left{
+    background-image: url('pics/header.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.right{
+    background-color: #222121;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.text{
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    right: 40%;
+    letter-spacing: 2px;
+    background: linear-gradient(to right, #333 45%, #fff 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header .welcome{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    color: white;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.header .paragraph{
+    grid-column: 3/5;
+    grid-row: 3/4;
+    color: white;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.header .btn{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    background-color: #a6e6eb;
+    color: #222121;
+    font-weight: bold;
+    border: none;
+    align-self: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.header .btn:hover{
+    background-color: #baf5d6;
+}
